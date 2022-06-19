@@ -1,1 +1,30 @@
-GET http://localhost:5000/api
+GET http://localhost:5000/api/user-name
+authorization:Barrer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmFjNjczMWVhY2I4YzlkNzAwNjIzZTgiLCJpYXQiOjE2NTU0NjYzMDksImV4cCI6MTY1NTQ2ODEwOX0.wof7S_Oosk7bg9XJyWO8krnrzrqP9Xxs6Do3aONSxTo
+
+
+######
+GET http://localhost:5000/api/user
+authorization:Barrer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmFjOTY4MGMyZGNiYmYzY2JmODBjMzQiLCJpYXQiOjE2NTU0Nzc4ODgsImV4cCI6MTY1NTQ3OTY4OH0.2lgEwG4Or12sgUugJbQ8MIUkasXu3BwcNxvQnfdUPRY
+
+
+####
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+    "email": "yovel@gmail.com",
+    "password": "123456789"
+}
+
+########
+
+POST http://localhost:5000/api/signup
+Content-Type: application/json
+
+{
+	"fullName": "yovel halabia",
+	"email": "yovel@gmail.com",
+	"password": "12345"
+}
+
